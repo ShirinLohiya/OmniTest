@@ -204,6 +204,3 @@ Results
 
 ---
 
-## License
-
-MIT
