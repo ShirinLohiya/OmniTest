@@ -1,0 +1,112 @@
+[
+  {
+    "test_id": "test_001",
+    "passed": true,
+    "checks": [
+      {
+        "check": "keyword_match",
+        "passed": true,
+        "detail": "Found ['Paris']"
+      },
+      {
+        "check": "max_length",
+        "passed": true,
+        "detail": "Length 31/200"
+      },
+      {
+        "check": "sentiment",
+        "passed": true,
+        "detail": "Expected 'neutral', detected 'neutral'"
+      }
+    ],
+    "prompt": "What is the capital of France?",
+    "response": "The capital of France is Paris."
+  },
+  {
+    "test_id": "test_002",
+    "passed": true,
+    "checks": [
+      {
+        "check": "keyword_match",
+        "passed": true,
+        "detail": "Found ['sunlight', 'energy', 'plants']"
+      },
+      {
+        "check": "max_length",
+        "passed": true,
+        "detail": "Length 105/300"
+      },
+      {
+        "check": "sentiment",
+        "passed": true,
+        "detail": "Expected 'neutral', detected 'neutral'"
+      }
+    ],
+    "prompt": "Explain photosynthesis in one sentence.",
+    "response": "Photosynthesis is the process by which plants convert sunlight into chemical energy to fuel their growth."
+  },
+  {
+    "test_id": "test_003",
+    "passed": true,
+    "checks": [
+      {
+        "check": "max_length",
+        "passed": true,
+        "detail": "Length 53/150"
+      },
+      {
+        "check": "sentiment",
+        "passed": true,
+        "detail": "Expected 'positive', detected 'positive'"
+      }
+    ],
+    "prompt": "Write a short motivational quote.",
+    "response": "Believe in yourself — every step forward is progress."
+  },
+  {
+    "test_id": "test_004",
+    "passed": true,
+    "checks": [
+      {
+        "check": "keyword_match",
+        "passed": true,
+        "detail": "Found ['Python', 'Java', 'JavaScript']"
+      },
+      {
+        "check": "max_length",
+        "passed": true,
+        "detail": "Length 69/200"
+      },
+      {
+        "check": "sentiment",
+        "passed": true,
+        "detail": "Expected 'neutral', detected 'neutral'"
+      }
+    ],
+    "prompt": "List three programming languages.",
+    "response": "Three popular programming languages are Python, Java, and JavaScript."
+  },
+  {
+    "test_id": "test_005",
+    "passed": true,
+    "checks": [
+      {
+        "check": "keyword_match",
+        "passed": true,
+        "detail": "Found ['4']"
+      },
+      {
+        "check": "max_length",
+        "passed": true,
+        "detail": "Length 15/100"
+      },
+      {
+        "check": "sentiment",
+        "passed": true,
+        "detail": "Expected 'neutral', detected 'neutral'"
+      }
+    ],
+    "prompt": "What is 2 + 2?",
+    "response": "2 + 2 equals 4."
+  }
+]
