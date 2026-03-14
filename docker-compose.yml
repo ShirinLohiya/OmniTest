@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  omnitest:
+    build: .
+    volumes:
+      - ./results:/app/results
+    # Uncomment the below lines and replace with your actual API key to test against OpenAI
+    # environment:
+    #   - OPENAI_API_KEY=sk-...
+    command: python main.py data/sample_tests.json
+
+  # Service specifically for running tests
+  test:
+    build: .
+    command: python -m pytest tests/ -v

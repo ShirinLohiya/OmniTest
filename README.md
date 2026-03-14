@@ -130,6 +130,38 @@ python -m pytest tests/ -v
 
 ---
 
+## Running with Docker
+
+You can easily run OmniTest without installing Python or dependencies locally using Docker.
+
+### Using Docker Compose (Recommended)
+
+Run the test suite:
+```bash
+docker-compose up omnitest
+```
+
+Run the unit tests:
+```bash
+docker-compose up test
+```
+
+> **Note:** To run with a real LLM, uncomment the `OPENAI_API_KEY` environment variable in `docker-compose.yml` and add your key.
+
+### Using Docker Build
+
+Build the image:
+```bash
+docker build -t omnitest .
+```
+
+Run the container (mounting the local `results` folder to save output logs):
+```bash
+docker run -v ${PWD}/results:/app/results omnitest
+```
+
+---
+
 ## Example Output
 
 ### Console
